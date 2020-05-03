@@ -1,0 +1,8 @@
+version: '3'
+services:
+  node:
+    build: .
+    command: node watch.js
+    tty: true
+    volumes:
+      - .:/myapp
